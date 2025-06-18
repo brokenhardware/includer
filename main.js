@@ -18,7 +18,7 @@ if (hashString) {
     const blobUrl = URL.createObjectURL(blob);
     const script = document.createElement('script');
     script.src = blobUrl;
-    script.onload = () => URL.revokeObjectURL(blobUrl);
+    //script.onload = () => URL.revokeObjectURL(blobUrl);
     document.body.appendChild(script);
   }
 
