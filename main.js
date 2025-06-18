@@ -10,3 +10,6 @@ if (hashString) {
     document.body.innerHTML = html
   }
 }
+else {
+  console.log ("Missing hash string");
+}
