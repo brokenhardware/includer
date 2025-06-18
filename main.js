@@ -13,7 +13,7 @@ if (hashString) {
   if (hashParams.has("js")) {
     console.log("ipfs js:", hashParams.get("js"));
     const ipfsJSAddr = hashParams.get("js");
-    const response2 = await verifiedFetch('ipns://' + ipfsJSAddr)
+    const response2 = await verifiedFetch('ipfs://' + ipfsJSAddr)
     const blob = await response2.blob();
     const blobUrl = URL.createObjectURL(blob);
     const script = document.createElement('script');
