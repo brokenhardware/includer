@@ -12,6 +12,7 @@ if (hashString) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = cssBlobUrl;
+    link.type = 'text/css';
     document.head.appendChild(link);
   }
   if (hashParams.has("html")) {
