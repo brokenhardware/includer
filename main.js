@@ -6,9 +6,14 @@ if (hashString) {
   if (hashParams.has("css")) {
     console.log("ipfs css:", hashParams.get("css"));
     const ipfsCSSAddr = hashParams.get("css");
-    const response1 = await verifiedFetch('ipfs://' + ipfsCSSAddr)
-    const cssBlob = await response1.blob();
+
+    const response1 = await verifiedFetch('ipfs://' + ipfsCSSAddr);
+    const cssBlob = new Blob([await response1.text()], { type: 'text/css' });
     const cssBlobUrl = URL.createObjectURL(cssBlob);
+    
+    //const response1 = await verifiedFetch('ipfs://' + ipfsCSSAddr)
+    //const cssBlob = await response1.blob();
+    //const cssBlobUrl = URL.createObjectURL(cssBlob);
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = cssBlobUrl;
