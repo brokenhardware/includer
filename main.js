@@ -41,7 +41,7 @@ if (hashString) {
 }
 else {console.log ("Missing hash string");}
 
-const searchString = window.location.hash.substring(1);
+const searchString = window.location.search;
 if (searchString) {
   const searchParams = new URLSearchParams(searchString);
   if (searchParams.has("css")) {
