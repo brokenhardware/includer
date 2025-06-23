@@ -39,9 +39,7 @@ if (hashString) {
     document.body.appendChild(script);
   }
 }
-else {
-  console.log ("Missing hash string");
-}
+else {console.log ("Missing hash string");}
 
 const searchString = window.location.hash.substring(1);
 if (searchString) {
@@ -82,3 +80,5 @@ if (searchString) {
     document.body.appendChild(script);
   }
 }
+else {console.log ("Missing search string");}
+
