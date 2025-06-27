@@ -1,6 +1,6 @@
-//import { verifiedFetch } from 'https://esm.sh/@helia/verified-fetch?bundle-deps'
+import { verifiedFetch } from 'https://esm.sh/@helia/verified-fetch?bundle-deps'
 //import { verifiedFetch } from './libs/verified-fetch.js'
-import { verifiedFetch } from 'https://cdn.jsdelivr.net/npm/@helia/verified-fetch@3.2.0/+esm';
+//import { verifiedFetch } from 'https://cdn.jsdelivr.net/npm/@helia/verified-fetch@3.2.0/+esm';
 
 
 const hashString = window.location.hash.substring(1);
