@@ -1,5 +1,5 @@
 //import { verifiedFetch } from 'https://esm.sh/@helia/verified-fetch?bundle-deps'
-import { verifiedFetch } from 'https://unpkg.com/@helia/verified-fetch/dist/index.min.js'
+import { verifiedFetch } from './libs/verified-fetch.js'
 
 
 const hashString = window.location.hash.substring(1);
